@@ -6,7 +6,6 @@ function TodoForm(props){
   function handleChange(event){//pega o valor do input
     let t = event.target.value;
     setText(t);
-
   }
 
   function addItem(event){
@@ -14,8 +13,7 @@ function TodoForm(props){
       if(text.trim()){
           props.onAddItem(text);
           setText("");
-      }
-      
+      }   
   }
     return(
             <form>
