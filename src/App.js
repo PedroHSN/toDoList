@@ -7,7 +7,7 @@ import './Todo.css';
 
 const SAVED_ITEMS = "savedItems"
 
-function Todo(){
+function App(){
 
   const [showModal, setShowModal] = useState(false)
   
@@ -61,4 +61,4 @@ function Todo(){
          </div>)
 }
 
-export default Todo
+export default App
