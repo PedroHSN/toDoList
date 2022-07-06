@@ -4,7 +4,7 @@ export default (state = [ ], action) => {
       return [...state, action.payload]
     case "DELETE_ITEM":
       return state.filter(item => item.id !== action.payload)
-    case "CHANGE_ITEM":
+    case "CHANCE_DONE":
       return state.map(item=>{
         if(item.id === action.payload){
             item.done = !item.done

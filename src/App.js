@@ -12,7 +12,7 @@ import listReducer from './reducers/listReducer';
 const SAVED_ITEMS = "savedItems"
 
 function persistState(state) {
-  localStorage.setItem('SAVED_ITEMS', JSON.stringify(state))
+  localStorage.setItem(SAVED_ITEMS, JSON.stringify(state))
 }
 function loadState(){
   const actualState = localStorage.getItem(SAVED_ITEMS);
